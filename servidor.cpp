@@ -30,7 +30,7 @@ void imprimir(int id) {
 
         cout << "Imprimindo " << imprimir.nome_arquivo << "..." << endl << endl;
         Sleep(2000);
-        cout << "Impressão completa. " << endl;
+        cout << "Impressao completa. " << endl;
         cout << "Id: " << imprimir.id_job << endl;
         cout << "Nome: " << imprimir.nome_arquivo << endl;
         cout << "Numero de paginas: " << imprimir.numero_paginas << endl << endl;
@@ -83,7 +83,6 @@ int main() {
             condVar.notify_one();
 
             DisconnectNamedPipe(hPipe);
-            cout << "Esperando proximo cliente" << endl;
         }
         else {
             cout << "Erro ao conectar o pipe";
